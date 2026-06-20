@@ -1,9 +1,6 @@
 package sn.fouadi.entities;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.util.List;
@@ -14,7 +11,9 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString @Builder
+@ToString
+@Builder //instancie un objet
+@NamedQuery(name = "Category.All",query = "SELECT c FROM Category c ORDER BY c.name")
 public class Category extends BaseEntity {
 
     @Column(nullable = false, length = 100)

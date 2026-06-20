@@ -15,8 +15,8 @@
             <!-- PostgreSQL DataSource -->
             <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
             <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/book_jpa_db"/>
-            <property name="jakarta.persistence.jdbc.user" value="votre_user_name"/>
-            <property name="jakarta.persistence.jdbc.password" value="votre_mot_de_passe"/>
+            <property name="jakarta.persistence.jdbc.user" value="votre-user-name"/>
+            <property name="jakarta.persistence.jdbc.password" value="votre-password"/>
 
             <!-- Hibernate -->
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
